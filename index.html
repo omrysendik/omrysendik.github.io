@@ -1,1 +1,654 @@
-Hello World
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+  <meta name=viewport content=“width=800”>
+  <meta name="generator" content="HTML Tidy for Linux/x86 (vers 11 February 2007), see www.w3.org">
+    <title>Roey Mechrez</title>
+  <style type="text/css">
+    /* Color scheme stolen from Sergey Karayev */
+    a {
+    color: #1772d0;
+    text-decoration:none;
+    }
+    a:focus, a:hover {
+    color: #f09228;
+    text-decoration:none;
+    }
+    body,td,th,tr,p,a {
+    font-family: 'Lato', Verdana, Helvetica, sans-serif;
+    font-size: 14px
+    }
+    strong {
+    font-family: 'Lato', Verdana, Helvetica, sans-serif;
+    font-size: 14px;
+    }
+    heading {
+    font-family: 'Lato', Verdana, Helvetica, sans-serif;
+    font-size: 22px;
+    }
+    papertitle {
+    font-family: 'Lato', Verdana, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 700
+    }
+    name {
+    font-family: 'Lato', Verdana, Helvetica, sans-serif;
+    font-size: 32px;
+    }
+    .one
+    {
+    width: 180px;
+    height: 180px;
+    position: relative;
+    }
+    .two
+    {
+    width: 180px;
+    height: 180px;
+    position: absolute;
+    transition: opacity .2s ease-in-out;
+    -moz-transition: opacity .2s ease-in-out;
+    -webkit-transition: opacity .2s ease-in-out;
+    }
+    .fade {
+     transition: opacity .2s ease-in-out;
+     -moz-transition: opacity .2s ease-in-out;
+     -webkit-transition: opacity .2s ease-in-out;
+    }
+    span.highlight {
+        background-color: #ffffd0;
+    }
+  </style>
+  <link rel="icon" type="image/png" href="favicon.ico">
+  <title>Roey Mechrez</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+  <link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+  <table width="800" border="0" align="center" cellspacing="0" cellpadding="0">
+    <tr>
+    <td>
+      <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+      <tr>
+        <td width="67%" valign="middle">
+        <p align="center">
+          <name>Roey Mechrez</name>
+        </p>
+        <p align="justify">
+		    I'm the CTO and a Co-founder at <a href="https://www.beyondminds.ai">BeyondMinds</a> where I lead a group of top AI researchers and scientists. 
+			Prior to joining BeyondMinds I did my PhD at <a href="https://www.technion.ac.il/en/home-2/">the Technion-Israel</a>, where I worked with 
+			<a href="https://lihi.net.technion.ac.il/">Prof. Lihi Zelnik-Manor</a>. 
+			My work lies at the intersection of computer vision and deep learning. 
+			Specifically, my research interests are in realistic image generation, manipulation, and transformation, 
+			focussing on tools, algorithms, and new paradigms for photo editing and synthesis. 
+
+		During my PhD research I was worked on <a href="https://webee.technion.ac.il/labs/cgm/Computer-Graphics-Multimedia/Software/saliencyManipulation/">Image-to-image problems</a>, 
+		<a href="https://webee.technion.ac.il/labs/cgm/Computer-Graphics-Multimedia/Software/Contextual/">Image Generation and GANs</a>, 
+		<a href="https://webee.technion.ac.il/labs/cgm/Computer-Graphics-Multimedia/Software/Contextual/">Super-resolution</a>, 
+		<a href="https://webee.technion.ac.il/labs/cgm/Computer-Graphics-Multimedia/Software/photorealism/">Photorealistic synthesis</a>, 
+		and <a href="https://webee.technion.ac.il/labs/cgm/Computer-Graphics-Multimedia/Software/DDIS/">Template Matching</a>.
+        My masters and bachelors were done at <a href="https://english.tau.ac.il/">Tel Aviv University</a> in Biomedical Engineering (cum laude).
+        </p>
+        <p align=center>
+          <a href="mailto:roimehrez@gmail.com"><img style="width: 25px" src="gmail.png"></a> &nbsp;  &nbsp;
+          <a href="Roey_Mechrez_CV.pdf"> <img style="width: 25px" src="CV.png"></a> &nbsp;  &nbsp;
+          <!--<a href="RoeyMechrez-bio.txt"> Bio /</a>-->
+          <a href="https://scholar.google.co.il/citations?user=ZvIdLmYAAAAJ&hl=en"> <img style="width: 25px" src="scholar.jpg"></a> &nbsp;  &nbsp;
+          <a href="https://www.linkedin.com/in/roey-mechrez/"> <img style="width: 25px" src="linkedin.png"></a> &nbsp;  &nbsp;
+		  <a href="https://github.com/roimehrez"> <img style="width: 25px" src="git.png">  </a> &nbsp;  &nbsp;
+		  <a href="https://www.beyondminds.ai"> <img style="height: 25px" src="bmlogo.png">  </a> &nbsp;  &nbsp;
+        </p>
+        </td>
+        <td width="33%">
+        <img src="RoeyMechrez_circle.jpg">
+        </td>
+      </tr>
+      </table>
+      <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+      <tr>
+        <td width="100%" valign="middle">
+		<heading>News</heading>
+		<p>
+		<a href="https://www.youtube.com/watch?v=RYqccAs8BT0"><img style="width: 40px"  src="youtube.jpg"> iNSPIRED Ai talk: There’s a New Wave of AI Adoption Barriers to Overcome, Now</a>
+		<br>
+		<a href="https://www.youtube.com/watch?v=rIo2Ehi_voI"><img style="width: 40px"  src="youtube.jpg"> Podcast: Utilizing AI 12: Why Do Most Enterprise AI Projects Fail? </a>
+		<br>
+		I'm co-orginizing <a href="https://data.vision.ee.ethz.ch/cvl/aim20/">AIM 2020: Advances in Image Manipulation workshop and challenges on image and video manipulation</a> at <a href="https://eccv2020.eu/">ECCV 2020</a>.
+		<br>
+		I was orginizing <a href="https://sites.google.com/view/046003-spring2019/home">Deep learning Theory and Application for Computer Vision</a> (winter school) at the Technion.
+		<br>
+		and <a href="https://www.pirm2018.org">PIRM2018: Workshop and Challenge on Perceptual Image Restoration and Manipulation</a> at <a href="https://eccv2018.org/">ECCV 2018</a>.
+		</p>
+		<heading>Research</heading>
+          <p>
+          I'm interested in computer vision, 
+		  machine learning, 
+		  optimization, 
+		  image processing, 
+		  and computational photography. Most of my papers deal with photorealistic image generation and manipulation in the low-mid level such as perceptual super resolution and in the high semantic level such as semantic style transfer.
+          </p>
+        </td>
+      </tr>
+      </table>
+
+  <table width="100%" align="center" border="0" cellspacing="0" cellpadding="10">
+    <!--=================Paper==========================-->
+    <tr onmouseout="TTT_stop()" onmouseover="ttt_start()" bgcolor="#ffffd0">
+      <td width="25%">
+        <div class="one">
+        <div  class="two" id = 'ttt_image'><img style="width: 180px" src='ttt_after.png'></div>
+        <img style="width: 180px" src='ttt_before.png'>
+        </div>
+        <script type="text/javascript">
+        function ttt_start() {
+        document.getElementById('ttt_image').style.opacity = "1";
+        }
+        function ttt_stop() {
+        document.getElementById('ttt_image').style.opacity = "0";
+        }
+        ttt_stop()
+        </script>
+      </td>
+      <td valign="top" width="75%">
+        <p><a href="https://arxiv.org/abs/2006.03952">
+		        <img style="width: 25px" src="new.png">
+        <papertitle>Self-Supervised Dynamic Networks for Covariate Shift Robustness</papertitle></a><br>
+          Tomer Cohen, Noy Shulman, Hai Morgenstern, <strong>Roey Mechrez</strong>, Erez Farha (<a href="https://www.beyondminds.ai">BeyondMinds</a>)
+		  <br>
+		  <em>Submitted to CVPR 2021</em> <br>
+		  <a href="https://arxiv.org/abs/2006.03952">arXiv</a>
+        <br>
+        <p></p>
+        <p>We propose Self-Supervised Dynamic Networks (SSDN): an input-dependent mechanism, inspired by dynamic networks, that allows a self-supervised network to predict the weights of the main network, and thus directly handle covariate shifts at test-time</p>
+      </td>
+    </tr>
+  <!--=================Paper==========================-->
+    <tr onmouseout="sal2_stop()" onmouseover="sal2_start()">
+      <td width="25%">
+        <div class="one">
+        <div  class="two" id = 'sal2_image'><img style="width: 180px" src='sal_after.png'></div>
+        <img style="width: 180px" src='sal_before.png'>
+        </div>
+        <script type="text/javascript">
+        function sal2_start() {
+        document.getElementById('sal2_image').style.opacity = "1";
+        }
+        function sal2_stop() {
+        document.getElementById('sal2_image').style.opacity = "0";
+        }
+        sal2_stop()
+        </script>
+      </td>
+      <td valign="top" width="75%">
+        <p><a href="http://links.springernature.com/f/a/V4nZfF_6SAVDpllsE9mu5Q~~/AABE5gA~/RgReQeWFP0QwaHR0cDovL3d3dy5zcHJpbmdlci5jb20vLS8zL0FXalp0MkptMDBhN21nTVg2ME43VwNzcGNCCgAABbJgXMqV5pNSFnJvZXlAdHgudGVjaG5pb24uYWMuaWxYBAAABuc~">
+        <papertitle>Saliency Driven Image Manipulation</papertitle></a> <b>(extended version)</b><br>
+          <strong>Roey Mechrez</strong>,
+		 <a href="https://research.adobe.com/person/eli-shechtman/">Eli Shechtman</a>
+		  <a href="http://lihi.eew.technion.ac.il/">Lihi Zelnik-Manor</a>
+		  <br>
+        <em>Machine Vision and Applications (special issue: IEEE WACV'18) </em> <br>
+        <a href="https://webee.technion.ac.il/labs/cgm/Computer-Graphics-Multimedia/Software/saliencyManipulation/">project page</a>
+        <p></p>
+        <p>The goal of this paper is to manipulating images in order to control the saliency of objects. We propose an approach that considers the internal color and saliency properties of the image.</p>
+      </td>
+    </tr>
+        <!--=================Paper==========================-->
+    <tr onmouseout="dn_stop()" onmouseover="dn_start()">
+      <td width="25%">
+        <div class="one">
+        <div  class="two" id = 'dn_image'><img style="width: 180px" src='dn_after.png'></div>
+        <img style="width: 180px" src='dn_before.png'>
+        </div>
+        <script type="text/javascript">
+        function dn_start() {
+        document.getElementById('dn_image').style.opacity = "1";
+        }
+        function dn_stop() {
+        document.getElementById('dn_image').style.opacity = "0";
+        }
+        dn_stop()
+        </script>
+      </td>
+      <td valign="top" width="75%">
+        <p>
+        <a href="https://arxiv.org/abs/1811.08760">
+		<papertitle>Dynamic-Net: Tuning the Objective Without Re-training</papertitle></a><br>
+		   Alon Shoshan, 
+		  <strong>Roey Mechrez</strong>,
+		  <a href="https://lihi.net.technion.ac.il/">Lihi Zelnik-Manor</a>
+		  <br>
+        <em>ICCV</em>, 2019 <br>
+		<a href="https://webee.technion.ac.il/labs/cgm/Computer-Graphics-Multimedia/Software/DynamicNet/">project page</a>
+		/
+		<a href="https://arxiv.org/abs/1811.08760">arXiv</a>
+		/
+		<a href="https://www.youtube.com/watch?v=JFym_934A20"><img style="width: 40px"  src="youtube.jpg"> vision day 2018 talk</a>
+		<br>
+        <p>We present a first attempt at alleviating the need for re-training. Rather than fixing the network at training time, we train a ``Dynamic-Net'' that can be modified at inference time.</p>
+      </td>
+    </tr>
+	<!--=================Paper==========================-->
+    <tr onmouseout="AFL_stop()" onmouseover="AFL_start()" bgcolor="#ffffd0">
+      <td width="25%">
+        <div class="one">
+        <div  class="two" id = 'afl_image'><img style="width: 180px" src='AFL_after.png'></div>
+        <img style="width: 180px" src='AFL_before.png'>
+        </div>
+        <script type="text/javascript">
+        function AFL_start() {
+        document.getElementById('afl_image').style.opacity = "1";
+        }
+        function AFL_stop() {
+        document.getElementById('afl_image').style.opacity = "0";
+        }
+        AFL_stop()
+        </script>
+      </td>
+      <td valign="top" width="75%">
+        <p>
+        <a href="https://arxiv.org/abs/1811.08126">
+		<papertitle>Adversarial Feedback Loop</papertitle></a><br>
+          Firas Shama, 
+		  <strong>Roey Mechrez</strong>,
+		   Alon Shoshan, 
+		  <a href="https://lihi.net.technion.ac.il/">Lihi Zelnik-Manor</a>
+		  <br>
+        <em>ICCV</em>, 2019 <br>
+		<a href="https://webee.technion.ac.il/labs/cgm/Computer-Graphics-Multimedia/Software/AFL/">project page</a>
+		/
+		<a href="https://arxiv.org/abs/1811.08126">arXiv</a>
+		/
+		<a href="https://www.youtube.com/watch?v=JFym_934A20"><img style="width: 40px"  src="youtube.jpg"> vision day 2018 talk</a>
+		<br>
+        <p>We propose a novel method that makes an explicit use of the discriminator in test-time, in a feedback manner in order to improve the generator results.</p>
+      </td>
+    </tr>
+  <!--=================Paper==========================-->
+    <tr onmouseout="isbi_stop()" onmouseover="isbi_start()" >
+      <td width="25%">
+        <div class="one">
+        <div  class="two" id = 'isbi_image'><img style="width: 180px" src='isbi.png'></div>
+        <img style="width: 180px" src='isbi.png'>
+        </div>
+        <script type="text/javascript">
+        function isbi_start() {
+        document.getElementById('isbi_image').style.opacity = "1";
+        }
+        function isbi_stop() {
+        document.getElementById('isbi_image').style.opacity = "0";
+        }
+        hdrnet_stop()
+        </script>
+      </td>
+      <td valign="top" width="75%">
+        <p><a href="https://arxiv.org/pdf/1811.00501">
+		<papertitle>Improving CNN Training using Disentanglement for Liver Lesion Classification in CT</papertitle></a><br>
+          <a href="https://www.eng.tau.ac.il/~avibc/">Avi Ben-Cohen</a>, 
+		  <strong>Roey Mechrez</strong>,
+		   Noa Yedidia, 
+		  <a href="http://www.eng.tau.ac.il/~hayit/">Hayit Greenspan</a>
+		  <br>
+        <em>To appear in EMBC</em> 2019 <br>
+		<a href="https://arxiv.org/abs/1811.00501">arXiv</a>
+		<br>
+        <p> We suggest the synthesis of new data by mixing the class specified and unspecified representation of different factors in the training data.</p>
+      </td>
+    </tr>
+	<!--=================Paper==========================-->
+    <tr onmouseout="hdrnet_stop()" onmouseover="hdrnet_start()" >
+      <td width="25%">
+        <div class="one">
+        <div  class="two" id = 'hdrnet_image'><img style="width: 180px" src='SRNE_after.png'></div>
+        <img style="width: 180px" src='SRNE_before.png'>
+        </div>
+        <script type="text/javascript">
+        function hdrnet_start() {
+        document.getElementById('hdrnet_image').style.opacity = "1";
+        }
+        function hdrnet_stop() {
+        document.getElementById('hdrnet_image').style.opacity = "0";
+        }
+        hdrnet_stop()
+        </script>
+      </td>
+      <td valign="top" width="75%">
+        <p><a href="https://arxiv.org/pdf/1803.04626">
+		<papertitle>Maintain Natural Image Statistics with the Contextual Loss</papertitle></a><br>
+          <strong>Roey Mechrez*</strong>,
+		  Itamar Talmi*,
+		  Firas Shama,
+		  <a href="https://lihi.net.technion.ac.il/">Lihi Zelnik-Manor</a>
+		  <br>
+        <em>ACCV</em>, 2018 <br>
+        <a href="https://webee.technion.ac.il/labs/cgm/Computer-Graphics-Multimedia/Software/Contextual/">project page</a>
+        /
+        <a href="https://github.com/roimehrez/contextualLoss">GitHub</a>
+		/
+        <a href="https://arxiv.org/abs/1803.04626">arXiv</a>
+		<br>
+		Results: <a href="https://webee.technion.ac.il/labs/cgm/Computer-Graphics-Multimedia/Software/Contextual/resources/SR/BSD100-contextual.zip">BSD100</a>
+		/
+		<a href="https://webee.technion.ac.il/labs/cgm/Computer-Graphics-Multimedia/Software/Contextual/resources/SR/PIRM-contextual.zip">PIRM</a>
+		/
+		<a href="https://webee.technion.ac.il/labs/cgm/Computer-Graphics-Multimedia/Software/Contextual/resources/SR/DIV2K-contextual.zip">DIV2K</a>
+		/
+		<a href="https://webee.technion.ac.il/labs/cgm/Computer-Graphics-Multimedia/Software/Contextual/resources/SR/set5-contextual.zip">set5</a>
+		/
+		<a href="https://webee.technion.ac.il/labs/cgm/Computer-Graphics-Multimedia/Software/Contextual/resources/SR/set14-contextual.zip">set14</a>
+		/
+		<a href="https://webee.technion.ac.il/labs/cgm/Computer-Graphics-Multimedia/Software/Contextual/resources/SR/urban100-contextual.zip">urban100</a>
+        <p></p>
+        <p>We use the contextual loss for two image restoration problems: super-resolution and normal estimation and reveal its relation to the KL-divergence.</p>
+      </td>
+    </tr>
+<!--=================Paper==========================-->
+    <tr onmouseout="pirm_stop()" onmouseover="pirm_start()" >
+      <td width="25%">
+        <div class="one">
+        <div  class="two" id = 'pirm_image'><img style="width: 180px" src='PIRM.jpg'></div>
+        <img style="width: 180px" src='PIRM.jpg'>
+        </div>
+        <script type="text/javascript">
+        function pirm_start() {
+        document.getElementById('pirm_image').style.opacity = "1";
+        }
+        function pirm_stop() {
+        document.getElementById('pirm_image').style.opacity = "0";
+        }
+        hdrnet_stop()
+        </script>
+      </td>
+      <td valign="top" width="75%">
+        <p><a href="https://arxiv.org/pdf/1809.07517">
+		<papertitle>The 2018 PIRM Challenge on Perceptual Image Super-resolution</papertitle></a><br>
+          <a href="https://yochai.webgr.technion.ac.il/">Yochai Blau*</a>, 
+		  <strong>Roey Mechrez*</strong>,
+		   <a href="http://www.vision.ee.ethz.ch/~timofter/">Radu Timofte</a>, 
+		  <a href="https://tomer.net.technion.ac.il/">Tomer Michaeli</a>, 
+		  <a href="https://lihi.net.technion.ac.il/">Lihi Zelnik-Manor</a>
+		  <br>
+        <em>ECCV workshop</em>, 2018 <br>
+        <a href="https://www.pirm2018.org/PIRM-SR.html">project page</a>
+		/
+        <a href="https://arxiv.org/abs/1809.07517">arXiv</a>
+		/ 
+		<a href="http://openaccess.thecvf.com/ECCV2018_workshops/ECCV2018_W25.py">all workshop papers at CVF</a>
+		<br>
+        <p></p>
+        <p>In contrast to previous SR challenges, our evaluation methodology jointly quantifies accuracy and perceptual quality</p>
+      </td>
+    </tr>
+ <!--=================Paper==========================-->
+    <tr onmouseout="CX_stop()" onmouseover="CX_start()" bgcolor="#ffffd0">
+      <td width="25%">
+        <div class="one">
+        <div  class="two" id = 'CX_image'><img style="width: 180px" src='CX_after.png'></div>
+        <img style="width: 180px" src='CX_before.png'>
+        </div>
+        <script type="text/javascript">
+        function CX_start() {
+        document.getElementById('CX_image').style.opacity = "1";
+        }
+        function CX_stop() {
+        document.getElementById('CX_image').style.opacity = "0";
+        }
+        CX_stop()
+        </script>
+      </td>
+      <td valign="top" width="75%">
+        <p><a href="https://arxiv.org/pdf/1803.02077">
+        <papertitle>The Contextual Loss for Image Transformation with Non-Aligned Data</papertitle></a><br>
+          <strong>Roey Mechrez*</strong>,
+		  Itamar Talmi*,
+		  <a href="https://lihi.net.technion.ac.il/">Lihi Zelnik-Manor</a>
+		  <br>
+        <em>ECCV</em>, 2018  <br>
+        <a href="https://webee.technion.ac.il/labs/cgm/Computer-Graphics-Multimedia/Software/Contextual/">project page</a>
+        /
+        <a href="https://github.com/roimehrez/contextualLoss">GitHub</a>
+		/
+        <a href="https://arxiv.org/abs/1803.02077">arXiv</a>
+		/
+		<a href="https://youtu.be/fdPc2okT_4I"><img style="width: 40px"  src="youtube.jpg"> video</a>
+		/
+		<font color="red"><strong>(Oral Acceptance rate 2.4%)</strong></font></a>
+		<br>
+		Resaults: 
+		<a href="https://webee.technion.ac.il/labs/cgm/Computer-Graphics-Multimedia/Software/Contextual/resources/comparison/index.html">faces</a>
+		/
+		<a href="https://webee.technion.ac.il/labs/cgm/Computer-Graphics-Multimedia/Software/Contextual/resources/comparison_animal/index.html">animals</a>
+		/
+		<a href="https://webee.technion.ac.il/labs/cgm/Computer-Graphics-Multimedia/Software/Contextual/resources/comparison_obamatrump/index.html">cool politicians</a>
+		/
+		<a href="https://webee.technion.ac.il/labs/cgm/Computer-Graphics-Multimedia/Software/Contextual/resources/single_im/index.html">single image animation</a>
+		/
+		<a href="https://webee.technion.ac.il/labs/cgm/Computer-Graphics-Multimedia/Software/Contextual/resources/video.html">puppet control</a>
+		/
+		<a href="https://webee.technion.ac.il/labs/cgm/Computer-Graphics-Multimedia/Software/Contextual/resources/m2f/index.html">male2female</a>
+		/
+		<a href="https://webee.technion.ac.il/labs/cgm/Computer-Graphics-Multimedia/Software/Contextual/resources/f2m/index.html">female2male</a>
+        <p></p>
+        <p>We suggest a new loss function for image manipulation and generation. We show some very cool applications such as semantic style transfer and single image animations.</p>
+      </td>
+    </tr>
+<!--=================Paper==========================-->
+    <tr onmouseout="sal_stop()" onmouseover="sal_start()">
+      <td width="25%">
+        <div class="one">
+        <div  class="two" id = 'sal_image'><img style="width: 180px" src='sal_after.png'></div>
+        <img style="width: 180px" src='sal_before.png'>
+        </div>
+        <script type="text/javascript">
+        function sal_start() {
+        document.getElementById('sal_image').style.opacity = "1";
+        }
+        function sal_stop() {
+        document.getElementById('sal_image').style.opacity = "0";
+        }
+        sal_stop()
+        </script>
+      </td>
+      <td valign="top" width="75%">
+        <p><a href="https://arxiv.org/pdf/1612.02184">
+        <papertitle>Saliency Driven Image Manipulation</papertitle></a><br>
+          <strong>Roey Mechrez</strong>,
+		 <a href="https://research.adobe.com/person/eli-shechtman/">Eli Shechtman</a>
+		  <a href="http://lihi.eew.technion.ac.il/">Lihi Zelnik-Manor</a>
+		  <br>
+        <em>WACV</em>, 2018 <br>
+        <a href="https://webee.technion.ac.il/labs/cgm/Computer-Graphics-Multimedia/Software/saliencyManipulation/">project page</a>
+        /
+        <a href="https://github.com/roimehrez/contextualLoss">GitHub</a>
+		/
+        <a href="https://arxiv.org/abs/1612.02184">arXiv</a>
+		/
+		<a href="https://youtu.be/CRedTtPDMXM"><img style="width: 40px"  src="youtube.jpg"> video</a>
+		/
+		<a href="http://wacv18.uccs.us/"><font color="red"><strong>Best paper (people's choice)</strong></font></a>
+        <p></p>
+        <p>Manipulating images in order to control the saliency of objects is the goal of this paper. We propose an approach that considers the internal color and saliency properties of the image. It changes the saliency map via an optimization framework that relies on patch-based manipulation using only patches from within the same image to maintain its appearance characteristics.</p>
+      </td>
+    </tr>
+<!--=================Paper==========================-->
+    <tr onmouseout="SPE_stop()" onmouseover="SPE_start()">
+      <td width="25%">
+        <div class="one">
+        <div  class="two" id = 'SPE_image'><img style="width: 180px" src='SPE_after.jpg'></div>
+        <img style="width: 180px" src='SPE_before.jpg'>
+        </div>
+        <script type="text/javascript">
+        function SPE_start() {
+        document.getElementById('SPE_image').style.opacity = "1";
+        }
+        function SPE_stop() {
+        document.getElementById('SPE_image').style.opacity = "0";
+        }
+        SPE_stop()
+        </script>
+      </td>
+      <td valign="top" width="75%">
+        <p><a href="https://arxiv.org/pdf/1709.09828">
+        <papertitle>Photorealistic Style Transfer with Screened Poisson Equation</papertitle></a><br>
+          <strong>Roey Mechrez</strong>,
+		 <a href="https://research.adobe.com/person/eli-shechtman/">Eli Shechtman</a>
+		  <a href="http://lihi.eew.technion.ac.il/">Lihi Zelnik-Manor</a>
+		  <br>
+        <em>BMVC</em>, 2018 <br>
+        <a href="https://webee.technion.ac.il/labs/cgm/Computer-Graphics-Multimedia/Software/photorealism/">project page</a>
+        /
+        <a href="https://github.com/roimehrez/photorealism">GitHub</a>
+		/
+        <a href="https://arxiv.org/abs/1709.09828">arXiv</a>
+		/
+		<a href="https://webee.technion.ac.il/labs/cgm/Computer-Graphics-Multimedia/Software/photorealism/ID679-supp/index.html">Results</a>
+        <p></p>
+        <p>Using the Screened Poisson Equation for photorealism style transfer</p>
+      </td>
+    </tr>
+<!--=================Paper==========================-->
+    <tr onmouseout="ddis_stop()" onmouseover="ddis_start()" bgcolor="#ffffd0">
+      <td width="25%">
+        <div class="one">
+        <div  class="two" id = 'ddis_image'><img style="width: 180px" src='ddis.png'></div>
+        </div>
+      </td>
+      <td valign="top" width="75%">
+        <p><a href="https://arxiv.org/abs/1612.02190">
+        <papertitle>Template Matching with Deformable Diversity Similarity</papertitle></a><br>
+          Itamar Talmi*,
+		  <strong>Roey Mechrez*</strong>,
+		 <a href="http://lihi.eew.technion.ac.il/">Lihi Zelnik-Manor</a>
+		  <br>
+        <em>CVPR</em>, 2017 <br>
+        <a href="https://webee.technion.ac.il/labs/cgm/Computer-Graphics-Multimedia/Software/DDIS/">project page</a>
+        /
+        <a href="https://github.com/roimehrez/DDIS">GitHub</a>
+		/
+        <a href="https://arxiv.org/abs/1612.02190">arXiv</a>
+		/
+		<font color="red"><strong>(Spotlight Acceptance rate 8%)</strong></font>
+        <p></p>
+        <p>Novel measure for template matching named Deformable Diversity Similarity -- based on the diversity of feature matches between a target image window and the template</p>
+      </td>
+    </tr>
+<!--=================Paper==========================-->
+    <tr onmouseout="ddis_stop()" onmouseover="ddis_start()">
+      <td width="25%">
+        <div class="one">
+        <div  class="two" id = 'ms_image'><img style="width: 180px" src='ms.png'></div>
+        </div>
+      </td>
+      <td valign="top" width="75%">
+        <p><a href="mechrez2016patch.pdf">
+        <papertitle>Patch-Based Segmentation with Spatial Consistency: Application to MS Lesions in Brain MRI</papertitle></a><br>
+		  <strong>Roey Mechrez</strong>,
+		  <a href="http://www.eng.biu.ac.il/goldbej/">Jacob Goldberger</a>
+		 <a href="http://www.eng.tau.ac.il/~hayit/">Hayit Greenspan</a>
+		  <br>
+        <em>International Journal of Biomedical Imaging</em>, 2016 <br>
+        <a href="mechrez2016patch.pdf">paper</a>
+        <p></p>
+        <p></p>
+      </td>
+    </tr>
+<!--=================Paper==========================-->
+    <tr onmouseout="ddis_stop()" onmouseover="ddis_start()">
+      <td width="25%">
+        <div class="one">
+        <div  class="two" id = 'ms_image'><img style="width: 180px" src='ms.png'></div>
+        </div>
+      </td>
+      <td valign="top" width="75%">
+        <p><a href="mechrez2015ms.pdf">
+        <papertitle>MS Lesion Segmentation using a Multi-Channel Patch-Based Approach with Spatial Consistency</papertitle></a><br>
+		  <strong>Roey Mechrez</strong>,
+		  <a href="http://www.eng.biu.ac.il/goldbej/">Jacob Goldberger</a>
+		 <a href="http://www.eng.tau.ac.il/~hayit/">Hayit Greenspan</a>
+		  <br>
+        <em>SPIE Medical Imaging. International Society for Optics and Photonics</em>, 2015 <br>
+        <a href="mechrez2015ms.pdf">Paper</a>
+        <p></p>
+        <p></p>
+      </td>
+    </tr>
+<!--=================Paper==========================-->
+	  <!------------------------------------------------/!-->
+      <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+      <tr>
+        <td>
+        <heading>Talks and Community service</heading>
+        </td>
+      </tr>
+      </table>
+      <table width="100%" align="center" border="0" cellpadding="20">
+      <tr>
+        <td width="25%"><img src="computer-vision.jpg" alt="computer_vision" width="160" height="160"></td>
+        <td width="75%" valign="center">
+        <p>
+          <a href="https://sites.google.com/view/vision-day-2018">
+          Controlling the Latent Space at Inference Time -- Israel Vision Day 2018
+          </a>
+          <br>
+          Industry Talks at: Intel (Haifa), Huawei (London), Samsung (Tel-Aviv), GM (Herzelia)
+          <br>
+		  Academy Talks at: HUJI and Weizmann
+          <br>
+          <a href="http://www.weizmann.ac.il/conferences/CVD2017/computer-vision-day-2017">
+          Photorealistic Image Synthesis and Mnipulation -- Israel Vision Day 2017
+          </a>
+		  <br>
+          <a href="http://cs.haifa.ac.il/~hagit/VisionDay/visionDay_2016.html">
+          Template Matching with Deformable Diversity Similarity -- Israel Vision Day 2016
+          </a>
+		  <br>
+		  Reviewer: CVPR'18 <a href="http://cvpr2018.thecvf.com/program/reviewer_acknowledgements">(Outstanding Reviewer)</a>, ICCV'18, ECCV'18, PIRM'18 (area chair), CVPR'19, ICCV'19, BMVC'19, NTIRE'19 <a href="http://www.vision.ee.ethz.ch/ntire19/#people">(program committee)</a>
+          <br>
+        </p>
+        </td>
+      </tr>
+      </table>
+	  <!------------------------------------------------/!-->
+      <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+      <tr>
+        <td>
+        <heading>Teaching</heading>
+        </td>
+      </tr>
+      </table>
+      <table width="100%" align="center" border="0" cellpadding="20">
+      <tr>
+        <td width="25%"><img src="computer-vision.jpg" alt="computer_vision" width="160" height="160"></td>
+        <td width="75%" valign="center">
+        <p>
+		  <a href="https://sites.google.com/view/046003-spring2019/home">
+          <papertitle>EE046003 Deep learning Theory and Application for Computer Vision - Spring 2019</papertitle>
+          </a>
+          <br><br>
+          <a href="https://sites.google.com/view/046746-spring2018">
+          <papertitle>EE046746 Applications and Algorithms in Computer Vision - Spring 2018</papertitle>
+          </a>
+          <br><br>
+          <a href="https://sites.google.com/view/046746-spring2017">
+          <papertitle>EE046746 Applications and Algorithms in Computer Vision - Spring 2017</papertitle>
+          </a>
+
+          <br>
+        </p>
+        </td>
+      </tr>
+      </table>
+      <script type="text/javascript">
+      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+          document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+      </script> <script type="text/javascript">
+      try {
+          var pageTracker = _gat._getTracker("UA-7580334-1");
+          pageTracker._trackPageview();
+          } catch(err) {}
+      </script>
+    </td>
+    </tr>
+  </table>
+  </body>
+</html>
