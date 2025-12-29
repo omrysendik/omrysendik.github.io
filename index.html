@@ -1,602 +1,216 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<html>
-  <head>
-  <meta name=viewport content=“width=800”>
-  <meta name="generator" content="HTML Tidy for Linux/x86 (vers 11 February 2007), see www.w3.org">
-    <title>Omry Sendik</title>
-  <style type="text/css">
-    /* Color scheme stolen from Sergey Karayev */
-    a {
-    color: #000000;
-    text-decoration:none;
-    }
-    a:focus, a:hover {
-    color: #000000;
-    text-decoration:none;
-    }
-    body,td,th,tr,p,a {
-    font-family: 'Inter', Verdana, Helvetica, sans-serif;
-    font-size: 14px
-    }
-    body {
-    background-color: #F6EDE6;
-    }
-    strong {
-    font-family: 'Inter', Verdana, Helvetica, sans-serif;
-    font-size: 14px;
-    }
-    heading {
-    font-family: 'Inter', Verdana, Helvetica, sans-serif;
-    font-size: 22px;
-    }
-    papertitle {
-    font-family: 'Inter', Verdana, Helvetica, sans-serif;
-    font-size: 14px;
-    font-weight: 700
-    }
-    name {
-    font-family: 'Inter', Verdana, Helvetica, sans-serif;
-    font-size: 32px;
-    }
-    .one
-    {
-    width: 180px;
-    height: 180px;
-    position: relative;
-    }
-    .two
-    {
-    width: 180px;
-    height: 180px;
-    position: absolute;
-    transition: opacity .2s ease-in-out;
-    -moz-transition: opacity .2s ease-in-out;
-    -webkit-transition: opacity .2s ease-in-out;
-    }
-    .fade {
-     transition: opacity .2s ease-in-out;
-     -moz-transition: opacity .2s ease-in-out;
-     -webkit-transition: opacity .2s ease-in-out;
-    }
-    span.highlight {
-        background-color: #f6ede6;
-    }
-  </style>
-  <link rel="icon" type="image/png" href="favicon.ico">
-  <title>Omry Sendik</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-  </head>
-  <body>
-  <table width="800" border="0" align="center" cellspacing="0" cellpadding="0">
-    <tr>
-    <td>
-      <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-      <tr>
-        <td width="67%" valign="middle">
-        <p align="center">
-          <name>Omry Sendik</name>
-        </p>
-        <p align="justify">
-		    I'm the CTO and Co-Founder of OpenEyes, where we're reinventing Commercial Auto Insurance using Computer Vision, Generative AI, and by closing the loop on loss runs. We combine state-of-the-art tech with insurance models to help fleets drive safer and save more, because crashes are expensive, but preventable. Before taking the startup plunge, I spent over a decade at Samsung, most recently leading a brilliant team of ~50 engineers in the automotive algorithms realm. We tackled everything from Image Signal Processing to Machine Learning and Computer Vision.
-I hold a PhD in Computer Science from Tel Aviv University, where I explored how Neural Networks can dream up images with no supervision. My MSc in the border between Electrical Engineering and Applied Math, also from TAU, was all about sampling theory, and I started my journey at the Technion with a BSc in EE and a BA in Physics.
-Probably most importantly, and when I'm not knee-deep in pixels or insurance data, I'm a proud but often absent father of three and husband.
-        </p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omry Sendik | CTO & AI Researcher</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #0a0a0a; color: #ededed; scroll-behavior: smooth; }
+        .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .gradient-text { background: linear-gradient(90deg, #60a5fa, #a78bfa); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .pub-card { transition: all 0.3s ease; border: 1px solid rgba(255, 255, 255, 0.05); }
+        .pub-card:hover { transform: translateY(-4px); background: rgba(255, 255, 255, 0.06); border-color: rgba(96, 165, 250, 0.3); }
+    </style>
+</head>
+<body class="selection:bg-blue-500/30">
 
-        <p align=center>
-          <a href="mailto:omrysendik@gmail.com"><img style="width: 25px" src="Email.png"></a> &nbsp;  &nbsp;
-          <a href="https://twitter.com/OmrySendik"> <img style="width: 25px" src="TwitterIcon.png"></a> &nbsp;  &nbsp;
-          <!--<a href="RoeyMechrez-bio.txt"> Bio /</a>-->
-          <a href="https://scholar.google.co.il/citations?user=HLtKby8AAAAJ&hl=en"> <img style="width: 25px" src="GoogleScholarIcon.jpg"></a> &nbsp;  &nbsp;
-          <a href="https://www.linkedin.com/in/omrysendik/"> <img style="width: 25px" src="LinkedinIcon.png"></a> &nbsp;  &nbsp;
-		  <a href="https://github.com/omrysendik"> <img style="width: 25px" src="GithubIcon.png">  </a> &nbsp;  &nbsp;
-        </p>
-        </td>
-        <td width="33%">
-        <img src="OS.jpeg" width="90%" height="90%">
-        </td>
+    <nav class="fixed w-full z-50 px-6 py-4">
+        <div class="max-w-5xl mx-auto flex justify-between items-center glass rounded-full px-6 py-3">
+            <span class="font-bold tracking-tighter text-xl"></span>
+            <div class="hidden md:flex space-x-8 text-sm font-medium opacity-80">
+                <a href="#about" class="hover:text-blue-400 transition">About</a>
+                <a href="#current" class="hover:text-blue-400 transition">Current</a>
+                <a href="#research" class="hover:text-blue-400 transition">Research</a>
+                <a href="mailto:omrysendik@gmail.com" class="bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-500 transition">Contact</a>
+            </div>
+        </div>
+    </nav>
 
-      </tr>
-      </table>
+    <section id="about" class="pt-32 pb-20 px-6">
+        <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+                    Building the future of <span class="gradient-text">Insurance.</span>
+                </h1>
+                <p class="text-xl text-gray-400 mb-8 leading-relaxed">
+                    CTO at <strong>OpenEyes</strong>. Formerly Samsung AI. 
+                    PhD on Generative Models.
+                </p>
+                <div class="flex gap-4">
+                    <a href="https://scholar.google.co.il/citations?user=HLtKby8AAAAJ&hl=en" target="_blank" class="glass px-6 py-3 rounded-xl hover:bg-white/10 transition">Google Scholar</a>
+                    <a href="https://www.linkedin.com/in/omrysendik/" target="_blank" class="glass px-6 py-3 rounded-xl hover:bg-white/10 transition">LinkedIn</a>
+                </div>
+            </div>
+            <div class="relative flex justify-center md:justify-end">
+                <div class="absolute -inset-4 bg-blue-500/20 blur-3xl rounded-full"></div>
+                <img src="Omry.jpg" alt="Omry Sendik" class="relative max-w-xs md:max-w-sm rounded-2xl grayscale hover:grayscale-0 transition duration-500 border border-white/10 shadow-2xl">
+            </div>
+        </div>
+    </section>
 
-    <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-      <tr>
-        <td width="100%" valign="middle">
-	<heading>Research</heading>
-          <p>
-          I'm interested in Computer Vision, Machine Learning, Generative Models and Image Processing
-          </p>
-        </td>
-      </tr>
-      </table>
+    <section id="current" class="py-20 px-6 bg-[#0f0f0f]">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-3xl font-bold mb-12">Current</h2>
+            <div class="glass p-8 rounded-3xl border-l-4 border-blue-500">
+                <div class="flex justify-between items-start mb-4">
+                    <div>
+                        <h3 class="text-2xl font-bold">CTO & Co-Founder</h3>
+                        <p class="text-blue-400">OpenEyes • 2021 — Present</p>
+                    </div>
+                </div>
+                <p class="text-gray-400 leading-relaxed italic">
+                    I'm the CTO and Co-Founder of OpenEyes, where we're reinventing Commercial Auto Insurance using Computer Vision, Generative AI, and by closing the loop on loss runs. We combine state-of-the-art tech with insurance models to help fleets drive safer and save more, because crashes are expensive, but preventable. Before taking the startup plunge, I spent over a decade at Samsung, most recently leading a brilliant team of engineers in the automotive algorithms realm. We tackled everything from Image Signal Processing to Machine Learning and Computer Vision. I hold a PhD in Computer Science from Tel Aviv University, where I explored how Generative Neural Networks can dream up images with no supervision. My MSc, on the border between Electrical Engineering and Applied Math, also from TAU, was all about sampling theory, and I started my journey at the Technion with a BSc in EE and a BA in Physics. Probably most importantly, and when I'm not knee-deep in pixels or insurance data, I'm a proud but often absent father of three and husband.
+                </p>
+            </div>
+        </div>
+    </section>
 
-  <table width="100%" align="center" border="0" cellspacing="0" cellpadding="10">
-    <!--=================Paper UMMGAN ==========================-->
-    <tr onmouseout="TTT_stop()" onmouseover="ttt_start()" bgcolor="#F0F0F0">
-      <td width="25%">
-        <div class="one">
-        <div  class="two" id = 'UMMGAN_image'><img style="width: 180px" src='UMMGAN.png'></div>
-        <img style="width: 180px" src='UMMGAN.png'>
-        </div>
-        <script type="text/javascript">
-        function UMMGAN_start() {
-        document.getElementById('UMMGAN_image').style.opacity = "1";
-        }
-        function ttt_stop() {
-        document.getElementById('UMMGAN_image').style.opacity = "0";
-        }
-        ttt_stop()
-        </script>
-      </td>
-      <td valign="top" width="75%">
-        <p><a href="https://arxiv.org/abs/2001.03640">
-        <papertitle>Unsupervised K-Modal Styled Content Generation</papertitle></a><br>
-          <strong>Omry Sendik</strong>, Dani Lischinski and Daniel Cohen-Or
-		  <br>
-		  <em>ACM Transactions on Graphics 2020</em> <br>
-        <br>
-        <p></p>
-        <p>We introduce uMM-GAN, a novel architecture designed to better model multi-modal distributions, in an unsupervised fashion. Building upon the StyleGAN architecture, our network learns multiple modes, in a completely unsupervised manner, and combines them using a set of learned weights. We demonstrate that this approach is capable of effectively approximating a complex distribution as a superposition of multiple simple ones. We further show that uMM-GAN effectively disentangles between modes and style, thereby providing an independent degree of control over the generated content.</p>
-      </td>
-    </tr>
+<section id="research" class="py-20 px-6">
+        <div class="max-w-5xl mx-auto">
+            <div class="flex justify-between items-end mb-12">
+                <div>
+                    <h2 class="text-3xl font-bold">Research</h2>
+                    <p class="text-gray-500 mt-2">Computer Vision, Generative Models & Signal Processing</p>
+                </div>
+            </div>
 
-    <!--=================Paper DeepAge==========================-->
-    <tr onmouseout="TTT_stop()" onmouseover="ttt_start()" bgcolor="#E0E0E0">
-      <td width="25%">
-        <div class="one">
-        <div  class="two" id = 'DeepAge_image'><img style="width: 180px" src='DeepAge.png'></div>
-        <img style="width: 180px" src='DeepAge.png'>
-        </div>
-        <script type="text/javascript">
-        function DeepAge_start() {
-        document.getElementById('DeepAge_image').style.opacity = "1";
-        }
-        function ttt_stop() {
-        document.getElementById('DeepAge_image').style.opacity = "0";
-        }
-        ttt_stop()
-        </script>
-      </td>
-      <td valign="top" width="75%">
-        <p><a href="https://www.dropbox.com/s/vhepdd27f730k8r/deep_age_paper_twocol_v5.pdf?dl=0">
-        <papertitle>DeepAge: Deep Learning of face-based age estimation</papertitle></a><br>
-          <strong>Omry Sendik</strong>, Yossi Keller
-		  <br>
-		  <em>Signal Processing: Image Communication 78 (2019)</em> <br>
-        <br>
-        <p></p>
-        <p>We present a dual Convolutional Neural Network (CNN) and Support Vector Regression (SVR) approach for face-based age estimation. A CNN is trained for representation learning, followed by Metric Learning, after which SVR is applied to the learned features. This allows to overcome the lack of large datasets with age annotations, by initially training the CNN for face recognition.</p>
-      </td>
-    </tr>
- 
-	  
-    <!--=================Paper CrossNet==========================-->
-    <tr onmouseout="TTT_stop()" onmouseover="ttt_start()" bgcolor="#F0F0F0">
-      <td width="25%">
-        <div class="one">
-        <div  class="two" id = 'CrossNet_image'><img style="width: 180px" src='CrossNet.png'></div>
-        <img style="width: 180px" src='CrossNet.png'>
-        </div>
-        <script type="text/javascript">
-        function CrossNet_start() {
-        document.getElementById('CrossNet_image').style.opacity = "1";
-        }
-        function ttt_stop() {
-        document.getElementById('CrossNet_image').style.opacity = "0";
-        }
-        ttt_stop()
-        </script>
-      </td>
-      <td valign="top" width="75%">
-        <p><a href="http://openaccess.thecvf.com/content_WACV_2020/papers/Sendik_CrossNet_Latent_Cross-Consistency_for_Unpaired_Image_Translation_WACV_2020_paper.pdf">
-        <papertitle>CrossNet: Latent Cross-Consistency for Unpaired Image Translation</papertitle></a><br>
-          <strong>Omry Sendik</strong>, Dani Lischinski and Daniel Cohen-Or
-		  <br>
-		  <em>The IEEE Winter Conference on Applications of Computer Vision 2019 (WACV)</em> <br>
-        <br>
-        <p></p>
-        <p>We introduce a novel architecture for un-paired image translation, and explore several new regularizers enabled by it. Specifically, our architecture comprises a pair of GANs, as well as a pair of translators between their respective latent spaces. These cross-translators enable us to impose several regularizing constraints on the learnt image translation operator, collectively referred to as latent cross-consistency.</p>
-      </td>
-    </tr>
+            <div class="grid md:grid-cols-2 gap-6">
+                
+                <div class="pub-card glass p-6 rounded-2xl">
+                    <span class="text-xs font-bold uppercase tracking-widest text-blue-500">ACM TOG 2020</span>
+                    <h4 class="text-xl font-bold mt-2 mb-3">uMM-GAN: Unsupervised K-Modal Styled Content Generation</h4>
+                    <p class="text-sm text-gray-400 leading-relaxed mb-4">A novel architecture building on StyleGAN to model multi-modal distributions in a completely unsupervised fashion.</p>
+                    <div class="mt-auto">
+                        <p class="text-xs text-gray-500 mb-4">O. Sendik, D. Lischinski, D. Cohen-Or</p>
+                        <a href="https://arxiv.org/abs/2001.03640" target="_blank" class="text-blue-400 text-sm font-semibold hover:underline">View Paper →</a>
+                    </div>
+                </div>
 
-    <!--=================Paper IMNet==========================-->
-    <tr onmouseout="TTT_stop()" onmouseover="ttt_start()" bgcolor="#E0E0E0">
-      <td width="25%">
-        <div class="one">
-        <div  class="two" id = 'IMNet_image'><img style="width: 180px" src='IMNet.png'></div>
-        <img style="width: 180px" src='IMNet.png'>
-        </div>
-        <script type="text/javascript">
-        function IMNet_start() {
-        document.getElementById('IMNet_image').style.opacity = "1";
-        }
-        function ttt_stop() {
-        document.getElementById('IMNet_image').style.opacity = "0";
-        }
-        ttt_stop()
-        </script>
-      </td>
-      <td valign="top" width="75%">
-        <p><a href="https://www.dropbox.com/s/3nen3v68xve9h5b/IM_Net_paper_submission_CVPR19.pdf?dl=0">
-        <papertitle>IM-Net for High Resolution Video Frame Interpolation</papertitle></a><br>
-          Tomer Peleg, Pablo Szekely, Doron Sabo and <strong>Omry Sendik</strong>
-		  <br>
-		  <em>CVPR 2019</em> <br>
-        <br>
-        <p></p>
-        <p>In this paper we propose IM-Net: an interpolated motion neural network. We used an economic structured architecture and end-to-end training with multi-scale tailored losses. In particular, we formulate interpolated motion estimation as classification rather than regression. IM-Net out-performs previous methods by more than 1.3dB (PSNR) ona high resolution version of the recently introduced Vimeo triplet dataset. Moreover, the network runs in less than 33msec on a single GPU for HD resolution.</p>
-      </td>
-    </tr>
-	  
-    <!--=================Paper WhatsInAFace==========================-->
-    <tr onmouseout="TTT_stop()" onmouseover="ttt_start()" bgcolor="#F0F0F0">
-      <td width="25%">
-        <div class="one">
-        <div  class="two" id = 'WhatsInAFace_image'><img style="width: 180px" src='WhatsInAFace.png'></div>
-        <img style="width: 180px" src='WhatsInAFace.png'>
-        </div>
-        <script type="text/javascript">
-        function WhatsInAFace_start() {
-        document.getElementById('WhatsInAFace_image').style.opacity = "1";
-        }
-        function ttt_stop() {
-        document.getElementById('WhatsInAFace_image').style.opacity = "0";
-        }
-        ttt_stop()
-        </script>
-      </td>
-      <td valign="top" width="75%">
-        <p><a href="https://www.dropbox.com/s/3fb1jdgnpb7jjy9/EG19_Whats_in_a_Face.pdf?dl=0">
-        <papertitle>What's in a Face? Metric Learning for Face Characterization</papertitle></a><br>
-          <strong>Omry Sendik</strong>, Dani Lischinski and Daniel Cohen-Or
-		  <br>
-		  <em>Euro Graphics 2019</em> <br>
-        <br>
-        <p></p>
-        <p>We present a method for determining which facial parts (mouth, nose, etc.) best characterize an individual, given a set of that individual’s portraits. We introduce a novel distinctiveness analysis of a set of portraits, which leverages the deep features extracted by a pre-trained face recognition CNN and a hair segmentation FCN, in the context of a weakly supervised metric learning scheme. Our analysis enables the generation of a polarized class activation map (PCAM) for an individual’s portrait via a transformation that localizes and amplifies the discriminative regions of the deep feature maps extracted by the aforementioned networks. A user study that we conducted shows that there is a surprisingly good agreement between the face parts that users indicate as characteristic and the face parts automatically selected by our method. We demonstrate a few applications of our method, including determining the most and the least representative portraits among a set of portraits of an individual, and the creation of facial hybrids: portraits that combine the characteristic recognizable facial features of two individuals. Our face characterization analysis is also effective for ranking portraits in order to find an individual’s look-alikes (Doppelgängers).</p>
-      </td>
-    </tr>
+                <div class="pub-card glass p-6 rounded-2xl">
+                    <span class="text-xs font-bold uppercase tracking-widest text-purple-500">Image Communication 2019</span>
+                    <h4 class="text-xl font-bold mt-2 mb-3">DeepAge: Deep Learning of face-based age estimation</h4>
+                    <p class="text-sm text-gray-400 leading-relaxed mb-4">Dual CNN and SVR approach for age estimation using representation and metric learning.</p>
+                    <div class="mt-auto">
+                        <p class="text-xs text-gray-500 mb-4">O. Sendik, Y. Keller</p>
+                        <a href="https://www.sciencedirect.com/science/article/abs/pii/S0923596519303248" target="_blank" class="text-blue-400 text-sm font-semibold hover:underline">View Paper →</a>
+                    </div>
+                </div>
 
-    <!--=================Paper Moist==========================-->
-    <tr onmouseout="TTT_stop()" onmouseover="ttt_start()" bgcolor="#E0E0E0">
-      <td width="25%">
-        <div class="one">
-        <div  class="two" id = 'Moist_image'><img style="width: 180px" src='Moisture.png'></div>
-        <img style="width: 180px" src='Moisture.png'>
-        </div>
-        <script type="text/javascript">
-        function Moist_start() {
-        document.getElementById('Moist_image').style.opacity = "1";
-        }
-        function ttt_stop() {
-        document.getElementById('Moist_image').style.opacity = "0";
-        }
-        ttt_stop()
-        </script>
-      </td>
-      <td valign="top" width="75%">
-        <p><a href="https://arxiv.org/abs/1806.00833">
-        <papertitle>Analyzing the ability to reconstruct the moisture field using commercial microwave network data</papertitle></a><br>
-          Noam David, <strong>Omry Sendik</strong>, Hagit Messer, Huaizhu Oliver Gao, Yoav Rubin, Dorita Rostkier-Edelstein, Pinhas Alpert
-		  <br>
-		  <em>Atmospheric Research</em> <br>
-        <br>
-        <p></p>
-        <p>This study demonstrates for the first time the potential to reconstruct the 2-Dimensional humidity field using commercial microwave links which form the infrastructure for data transmission in cellular networks. Water vapor attenuates the waves transmitted by the system and thus these microwave links can potentially form as a virtual network for monitoring the humidity field. The results show a correlation of between 0.6 and 0.92 with root mean square differences ranging from 1.9 to 4.15 gr/m^3 between conventional humidity gauges and the humidity estimates calculated for the same points in space by the proposed technology. The results obtained are the first to point out the improved performance of humidity measurements when using data from multiple microwave links. These results indicate the tremendous potential of this novel approach for improving the initialization of meteorological forecasting models thus potentially improving the ability to cope with the dangers associated with extreme weather.</p>
-      </td>
-    </tr>
+                <div class="pub-card glass p-6 rounded-2xl">
+                    <span class="text-xs font-bold uppercase tracking-widest text-blue-500">WACV 2019</span>
+                    <h4 class="text-xl font-bold mt-2 mb-3">CrossNet: Latent Cross-Consistency for Unpaired Image Translation</h4>
+                    <p class="text-sm text-gray-400 leading-relaxed mb-4">Introducing latent cross-consistency to regularize unpaired image translation operators.</p>
+                    <div class="mt-auto">
+                        <p class="text-xs text-gray-500 mb-4">O. Sendik, D. Lischinski, D. Cohen-Or</p>
+                        <a href="https://arxiv.org/abs/1901.04530" target="_blank" class="text-blue-400 text-sm font-semibold hover:underline">View Paper →</a>
+                    </div>
+                </div>
 
-  
-    <!--=================Paper Correlations==========================-->
-    <tr onmouseout="TTT_stop()" onmouseover="ttt_start()" bgcolor="#F0F0F0">
-      <td width="25%">
-        <div class="one">
-        <div  class="two" id = 'Correlations_image'><img style="width: 180px" src='Correlations.png'></div>
-        <img style="width: 180px" src='Correlations.png'>
-        </div>
-        <script type="text/javascript">
-        function Correlations_start() {
-        document.getElementById('Correlations_image').style.opacity = "1";
-        }
-        function ttt_stop() {
-        document.getElementById('Correlations_image').style.opacity = "0";
-        }
-        ttt_stop()
-        </script>
-      </td>
-      <td valign="top" width="75%">
-        <p><a href="https://dl.acm.org/doi/pdf/10.1145/3015461">
-        <papertitle>Deep Correlations for Texture synthesis</papertitle></a><br>
-          <strong>Omry Sendik</strong> and Daniel Cohen-Or
-		  <br>
-		  <em>ACM Transactions on Graphics, 2017</em> <br>
-        <br>
-        <p></p>
-        <p>We introduce a structural energy, based on correlations among deep features, which capture the self-similarities and regularities characterizing the texture. Specifically, we show that our technique can synthesize textures that have structures of various scales, local and nonlocal, and the combination of the two.</p>
-      </td>
-    </tr>
+                <div class="pub-card glass p-6 rounded-2xl">
+                    <span class="text-xs font-bold uppercase tracking-widest text-green-500">CVPR 2019</span>
+                    <h4 class="text-xl font-bold mt-2 mb-3">IM-Net for High Resolution Video Frame Interpolation</h4>
+                    <p class="text-sm text-gray-400 leading-relaxed mb-4">Formulating motion estimation as classification to outperform previous methods on HD video datasets.</p>
+                    <div class="mt-auto">
+                        <p class="text-xs text-gray-500 mb-4">T. Peleg, P. Szekely, D. Sabo, O. Sendik</p>
+                        <a href="https://openaccess.thecvf.com/content_CVPR_2019/html/Peleg_IM-Net_for_High_Resolution_Video_Frame_Interpolation_CVPR_2019_paper.html" target="_blank" class="text-blue-400 text-sm font-semibold hover:underline">View Paper →</a>
+                    </div>
+                </div>
 
-  
-    <!--=================Paper Survey==========================-->
-    <tr onmouseout="TTT_stop()" onmouseover="ttt_start()" bgcolor="#E0E0E0">
-      <td width="25%">
-        <div class="one">
-        <div  class="two" id = 'Survey_image'><img style="width: 180px" src='Survey.png'></div>
-        <img style="width: 180px" src='Survey.png'>
-        </div>
-        <script type="text/javascript">
-        function Survey_start() {
-        document.getElementById('Survey_image').style.opacity = "1";
-        }
-        function ttt_stop() {
-        document.getElementById('Survey_image').style.opacity = "0";
-        }
-        ttt_stop()
-        </script>
-      </td>
-      <td valign="top" width="75%">
-        <p><a href="https://b91c0d12-0404-434f-8960-b62c985d23bd.filesusr.com/ugd/b1fe6d_e3d705b7f5ac48e8a5ce841faa799128.pdf">
-        <papertitle>A New Approach to Precipitation Monitoring: A critical survey of existing technologies and challenges</papertitle></a><br>
-          <strong>Omry Sendik</strong> and Hagit Messer
-		  <br>
-		  <em>IEEE Signal Processing Magazine, 2015</em> <br>
-        <br>
-        <p></p>
-        <p>The goal of this article is to present a critical survey of the existing papers and works on this topic. We emphasize the works relating this topic to multidimensional signal processing. The importance of precipitation (rain, sleet, hail, snow, and any other outcomes of the condensation of water vapor that falls by virtue of gravity) is clear to any layman. Whether  it  is  required  for  the  purpose  of  precisely  measuring  past  precipitation  quantities or for generating future predictions, monitoring such phenomena has been of inter-est to humankind since early biblical days.</p>
-      </td>
-    </tr>
-  
-	  
-    <!--=================Paper Reconst==========================-->
-    <tr onmouseout="TTT_stop()" onmouseover="ttt_start()" bgcolor="#F0F0F0">
-      <td width="25%">
-        <div class="one">
-        <div  class="two" id = 'Reconst_image'><img style="width: 180px" src='Reconst.png'></div>
-        <img style="width: 180px" src='Reconst.png'>
-        </div>
-        <script type="text/javascript">
-        function Reconst_start() {
-        document.getElementById('Reconst_image').style.opacity = "1";
-        }
-        function ttt_stop() {
-        document.getElementById('Reconst_image').style.opacity = "0";
-        }
-        ttt_stop()
-        </script>
-      </td>
-      <td valign="top" width="75%">
-        <p><a href="https://b91c0d12-0404-434f-8960-b62c985d23bd.filesusr.com/ugd/b1fe6d_64b8771cb1e04b3cba34c268e4a7e31b.pdf">
-        <papertitle>On the Reconstructability of Images Sampled by Random Line Projections</papertitle></a><br>
-          <strong>Omry Sendik</strong>and Hagit Messer
-		  <br>
-		  <em>IEEE Conference, 2012</em> <br>
-        <br>
-        <p></p>
-        <p>This paper addresses the problem of sampling a two dimensional function (an image) by projections along lines with an arbitrary geometry. By usage of the Papoulis  Generalized Sampling  Expansion  theorem,  and  addressing  the  problem  of missing  samples,  we  are  able  to  state,  for  any  given  sampling realization,  which  sampling  schemes  will  yield  reconstructable images  and  what sampling (Nyquist) frequency is required for this realization. Finally, we apply this technique on two examples, and demonstrate that with certain geometries the function is reconstructable, while with others it is not.</p>
-      </td>
-    </tr>
-	  
-    <!--=================Paper Cell==========================-->
-    <tr onmouseout="TTT_stop()" onmouseover="ttt_start()" bgcolor="#E0E0E0">
-      <td width="25%">
-        <div class="one">
-        <div  class="two" id = 'Cell_image'><img style="width: 180px" src='Cell.png'></div>
-        <img style="width: 180px" src='Cell.png'>
-        </div>
-        <script type="text/javascript">
-        function Cell_start() {
-        document.getElementById('Cell_image').style.opacity = "1";
-        }
-        function ttt_stop() {
-        document.getElementById('Cell_image').style.opacity = "0";
-        }
-        ttt_stop()
-        </script>
-      </td>
-      <td valign="top" width="75%">
-        <p><a href="https://b91c0d12-0404-434f-8960-b62c985d23bd.filesusr.com/ugd/b1fe6d_4530a94569e2432aab65952a82813094.pdf">
-        <papertitle>Cellular network infrastructure- the future of fog monitoring?</papertitle></a><br>
-          Noam David, <strong>Omry Sendik</strong>, Hagit Messer and Pinhas Alpert
-		  <br>
-		  <em>Bulletin of the American Meteorological Society, December 2014</em> <br>
-        <br>
-        <p></p>
-        <p>In this paper, a theoretical simulation is presented in which simulated fog patches are introduced into an area where a network of links is deployed. Two-dimensional maps are generated utilizing the simulated microwave network to represent sensitivity thresholds for fog detection at three different frequencies: 20, 38, and 80 GHz. Real-data measurements of fog are also demonstrated using 38-GHz band links. The results indicate the vast future potential of commercial microwave links as an opportunistic system for monitoring fog.</p>
-      </td>
-    </tr>
+                <div class="pub-card glass p-6 rounded-2xl">
+                    <span class="text-xs font-bold uppercase tracking-widest text-blue-500">Eurographics 2019</span>
+                    <h4 class="text-xl font-bold mt-2 mb-3">What's in a Face? Metric Learning for Face Characterization</h4>
+                    <p class="text-sm text-gray-400 leading-relaxed mb-4">Determining characteristic facial parts using deep features and weakly supervised metric learning.</p>
+                    <div class="mt-auto">
+                        <p class="text-xs text-gray-500 mb-4">O. Sendik, D. Lischinski, D. Cohen-Or</p>
+                        <a href="https://www.cs.huji.ac.il/~danix/publications/EG19_Whats_in_a_Face.pdf" target="_blank" class="text-blue-400 text-sm font-semibold hover:underline">View PDF →</a>
+                    </div>
+                </div>
 
-    <!--=================Paper Acheiv==========================-->
-    <tr onmouseout="TTT_stop()" onmouseover="ttt_start()" bgcolor="#F0F0F0">
-      <td width="25%">
-        <div class="one">
-        <div  class="two" id = 'Acheivable_image'><img style="width: 180px" src='Acheivable.png'></div>
-        <img style="width: 180px" src='Acheivable.png'>
-        </div>
-        <script type="text/javascript">
-        function Acheivable_start() {
-        document.getElementById('Acheivable_image').style.opacity = "1";
-        }
-        function ttt_stop() {
-        document.getElementById('Acheivable_image').style.opacity = "0";
-        }
-        ttt_stop()
-        </script>
-      </td>
-      <td valign="top" width="75%">
-        <p><a href="https://b91c0d12-0404-434f-8960-b62c985d23bd.filesusr.com/ugd/b1fe6d_d447594f9ace41a8a7ccbc085688f8bc.pdf">
-        <papertitle>On the achievable coverage of rain field mapping using measurements from a given set of microwave links</papertitle></a><br>
-          <strong>Omry Sendik</strong> and Hagit Messer
-		  <br>
-		  <em>IEEE Conference, 2014</em> <br>
-        <br>
-        <p></p>
-        <p>In  this  paper we  discuss the  different  problem,  of detecting  rain fields, using measurements from a given set of microwave links. By  considering  the  process  in  which  the  CWN  data  is  provided, and  by  exploiting  the  power  law  which  describes  the  relation between  the  microwave  signal  attenuation  and  the  rain  rate  per km, we develop an algorithm which generates maps depicting the minimal detectable rain rate.</p>
-      </td>
-    </tr>
+                <div class="pub-card glass p-6 rounded-2xl">
+                    <span class="text-xs font-bold uppercase tracking-widest text-blue-500">ACM TOG 2017</span>
+                    <h4 class="text-xl font-bold mt-2 mb-3">Deep Correlations for Texture Synthesis</h4>
+                    <p class="text-sm text-gray-400 leading-relaxed mb-4">Introducing structural energy based on correlations among deep features to capture structural regularities.</p>
+                    <div class="mt-auto">
+                        <p class="text-xs text-gray-500 mb-4">O. Sendik, D. Cohen-Or</p>
+                        <a href="https://www.cs.tau.ac.il/~dcor/articles/2017/Deep.Correlations.pdf" target="_blank" class="text-blue-400 text-sm font-semibold hover:underline">View PDF →</a>
+                    </div>
+                </div>
 
-  
-    <!--=================Paper CMOS==========================-->
-    <tr onmouseout="TTT_stop()" onmouseover="ttt_start()" bgcolor="#E0E0E0">
-      <td width="25%">
-        <div class="one">
-        <div  class="two" id = 'CMOS_image'><img style="width: 180px" src='CMOS.png'></div>
-        <img style="width: 180px" src='CMOS.png'>
-        </div>
-        <script type="text/javascript">
-        function CMOS_start() {
-        document.getElementById('CMOS_image').style.opacity = "1";
-        }
-        function ttt_stop() {
-        document.getElementById('CMOS_image').style.opacity = "0";
-        }
-        ttt_stop()
-        </script>
-      </td>
-      <td valign="top" width="75%">
-        <p><a href="https://ieeexplore.ieee.org/document/5438821">
-        <papertitle>A 90-nm CMOS Power Amplifier for 802.16e (WiMAX) Applications</papertitle></a><br>
-          Ofir Degani, Fabian Cossoy, Shay Shahaf, Emanuel Cohen, Vladimir Kravtsov, <strong>Omry Sendik</strong>, Debopriyo Chowdhury, Christopher D Hull and Shmuel Ravid
-		  <br>
-		  <em>IEEE Transactions on Microwave Theory and Techniques, 2010</em> <br>
-        <br>
-        <p></p>
-        <p>We demonstrate a single-stage 90-nm CMOS power amplifier (PA) for 2.3-2.7-GHz WiMAX (802.16e) band applications.</p>
-      </td>
-    </tr>
-	  
-	  
+                <div class="pub-card glass p-6 rounded-2xl">
+                    <span class="text-xs font-bold uppercase tracking-widest text-orange-500">Atmospheric Research</span>
+                    <h4 class="text-xl font-bold mt-2 mb-3">Reconstructing the moisture field using microwave data</h4>
+                    <p class="text-sm text-gray-400 leading-relaxed mb-4">Reconstructing 2D humidity fields using cellular network opportunistic microwave links.</p>
+                    <div class="mt-auto">
+                        <p class="text-xs text-gray-500 mb-4">N. David, O. Sendik, et al.</p>
+                        <a href="https://arxiv.org/abs/1806.00833" target="_blank" class="text-blue-400 text-sm font-semibold hover:underline">View Paper →</a>
+                    </div>
+                </div>
 
-	  <!------------------------------------------------/!-->
-      <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-      <tr>
-        <td>
-        <heading>Academics</heading>
-        </td>
-      </tr>
-      </table>
+                <div class="pub-card glass p-6 rounded-2xl">
+                    <span class="text-xs font-bold uppercase tracking-widest text-blue-400">IEEE Signal Processing Magazine</span>
+                    <h4 class="text-xl font-bold mt-2 mb-3">Precipitation Monitoring: A critical survey</h4>
+                    <p class="text-sm text-gray-400 leading-relaxed mb-4">A critical survey on multidimensional signal processing for weather monitoring via CWCNs.</p>
+                    <div class="mt-auto">
+                        <p class="text-xs text-gray-500 mb-4">O. Sendik, H. Messer</p>
+                        <a href="https://ieeexplore.ieee.org/document/7078990" target="_blank" class="text-blue-400 text-sm font-semibold hover:underline">View Paper →</a>
+                    </div>
+                </div>
 
-  <table width="100%" align="center" border="0" cellspacing="0" cellpadding="10">
-    <!--=================PhD ==========================-->
-    <tr onmouseout="TTT_stop()" onmouseover="ttt_start()" bgcolor="#F0F0F0">
-      <td width="25%">
-        <div class="one">
-        <div  class="two" id = 'PhD_image'><img style="width: 180px" src='PhD.png'></div>
-        <img style="width: 180px" src='PhD.png'>
+                <div class="pub-card glass p-6 rounded-2xl">
+                    <span class="text-xs font-bold uppercase tracking-widest text-red-500">IEEE Trans. MTT</span>
+                    <h4 class="text-xl font-bold mt-2 mb-3">A 90-nm CMOS Power Amplifier for WiMAX</h4>
+                    <p class="text-sm text-gray-400 leading-relaxed mb-4">Single-stage CMOS power amplifier for 2.3-2.7-GHz WiMAX applications.</p>
+                    <div class="mt-auto">
+                        <p class="text-xs text-gray-500 mb-4">O. Degani, et al.</p>
+                        <a href="https://ieeexplore.ieee.org/document/5135561" target="_blank" class="text-blue-400 text-sm font-semibold hover:underline">View Paper →</a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <script type="text/javascript">
-        function PhD_start() {
-        document.getElementById('PhD_image').style.opacity = "1";
-        }
-        function ttt_stop() {
-        document.getElementById('PhD_image').style.opacity = "0";
-        }
-        ttt_stop()
-        </script>
-      </td>
-      <td valign="top" width="75%">
-        <p><a href="https://www.dropbox.com/s/law1b74gv3qd238/Dissertation_Subm.pdf?dl=0">
-        <papertitle>Image synthesis through weak supervision</papertitle></a><br>
-          <strong>Omry Sendik</strong>
-		  <br>
-		  <em>PhD</em> <br>
-        <br>
-        <p></p>
-        <p></p>
-      </td>
-    </tr>
+    </section>
 
-    <!--=================MSc ==========================-->
-    <tr onmouseout="TTT_stop()" onmouseover="ttt_start()" bgcolor="#E0E0E0">
-      <td width="25%">
-        <div class="one">
-        <div  class="two" id = 'MSc_image'><img style="width: 180px" src='MSc.png'></div>
-        <img style="width: 180px" src='MSc.png'>
+    <section class="py-20 px-6 bg-[#0a0a0a]">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-3xl font-bold mb-12 italic opacity-50">Academics & Theses</h2>
+            <div class="space-y-4">
+                <div class="flex items-center justify-between p-4 glass rounded-xl">
+                    <div>
+                        <span class="text-blue-400 font-bold">PhD</span>
+                        <span class="ml-4 text-gray-300">Image synthesis through weak supervision</span>
+						<a href="https://drive.google.com/file/d/1gR5nhLWBPue6S-HIDGw5eRLxwN_MNXJo/view?usp=drive_link" target="_blank" class="text-blue-400 text-sm font-semibold hover:underline"> View</a>
+                    </div>
+                </div>
+                <div class="flex items-center justify-between p-4 glass rounded-xl">
+                    <div>
+                        <span class="text-blue-400 font-bold">MSc</span>
+                        <span class="ml-4 text-gray-300">On the Coverage and Reconstructability of 2D Functions</span>
+						<a href="MSc Thesis.pdf" target="_blank" class="text-blue-400 text-sm font-semibold hover:underline"> View</a>
+                    </div>
+                </div>
+                <div class="flex items-center justify-between p-4 glass rounded-xl">
+                    <div>
+                        <span class="text-blue-400 font-bold">BSc</span>
+                        <span class="ml-4 text-gray-300">Speech Enhancement Employing Discrete Modulation Transforms</span>
+						<a href="BSc Proj.pdf" target="_blank" class="text-blue-400 text-sm font-semibold hover:underline"> View</a>
+                    </div>
+                </div>
+                <div class="flex items-center justify-between p-4 glass rounded-xl">
+                    <div>
+                        <span class="text-blue-400 font-bold">BSc</span>
+                        <span class="ml-4 text-gray-300">Analytical Mechanics</span>
+						<a href="My summary.pdf" target="_blank" class="text-blue-400 text-sm font-semibold hover:underline"> View</a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <script type="text/javascript">
-        function MSc_start() {
-        document.getElementById('MSc_image').style.opacity = "1";
-        }
-        function ttt_stop() {
-        document.getElementById('MSc_image').style.opacity = "0";
-        }
-        ttt_stop()
-        </script>
-      </td>
-      <td valign="top" width="75%">
-        <p><a href="https://b91c0d12-0404-434f-8960-b62c985d23bd.filesusr.com/ugd/b1fe6d_f7b9ea24ef8d40508fab021af73d9087.pdf">
-        <papertitle>On the Coverage and Reconstructability of 2D Functions Sampled by Arbitrary Line Projections with an Application to Rain Field Mapping</papertitle></a><br>
-          <strong>Omry Sendik</strong>
-		  <br>
-		  <em>MSc</em> <br>
-        <br>
-        <p></p>
-        <p></p>
-      </td>
-    </tr>
-	  
-    <!--=================BSc ==========================-->
-    <tr onmouseout="TTT_stop()" onmouseover="ttt_start()" bgcolor="#F0F0F0">
-      <td width="25%">
-        <div class="one">
-        <div  class="two" id = 'BSc_image'><img style="width: 180px" src='BSc.png'></div>
-        <img style="width: 180px" src='BSc.png'>
-        </div>
-        <script type="text/javascript">
-        function BSc_start() {
-        document.getElementById('BSc_image').style.opacity = "1";
-        }
-        function ttt_stop() {
-        document.getElementById('BSc_image').style.opacity = "0";
-        }
-        ttt_stop()
-        </script>
-      </td>
-      <td valign="top" width="75%">
-        <p><a href="https://b91c0d12-0404-434f-8960-b62c985d23bd.filesusr.com/ugd/b1fe6d_bdfdce08898649529b7c10616e5109d1.pdf">
-        <papertitle>Speech Enhancement Employing Discrete Modulation Transforms</papertitle></a><br>
-          <strong>Omry Sendik</strong>
-		  <br>
-		  <em>BSc</em> <br>
-        <br>
-        <p></p>
-        <p></p>
-      </td>
-    </tr>
-	  
-    <!--=================Anal Mech ==========================-->
-    <tr onmouseout="TTT_stop()" onmouseover="ttt_start()" bgcolor="#E0E0E0">
-      <td width="25%">
-        <div class="one">
-        <div  class="two" id = 'AnalMech_image'><img style="width: 180px" src='AnalMech.png'></div>
-        <img style="width: 180px" src='AnalMech.png'>
-        </div>
-        <script type="text/javascript">
-        function AnalMech_start() {
-        document.getElementById('AnalMech_image').style.opacity = "1";
-        }
-        function ttt_stop() {
-        document.getElementById('AnalMech_image').style.opacity = "0";
-        }
-        ttt_stop()
-        </script>
-      </td>
-      <td valign="top" width="75%">
-        <p><a href="https://b91c0d12-0404-434f-8960-b62c985d23bd.filesusr.com/ugd/b1fe6d_92b1c5ea761a4978a5d51a698c547ef3.pdf">
-        <papertitle>Analytical Mechanics</papertitle></a><br>
-          <strong>Omry Sendik</strong>
-		  <br>
-		  <em></em> <br>
-        <br>
-        <p></p>
-        <p></p>
-      </td>
-    </tr>
+    </section>
 
+    <footer class="py-20 text-center border-t border-white/5">
+        <p class="text-gray-500 text-sm italic">"Crashes are expensive, but preventable."</p>
+        <p class="mt-4 text-xs text-gray-600">&copy; 2024 Omry Sendik. CTO & Founder.</p>
+    </footer>
 
-	  
-	  
-    </td>
-    </tr>
-  </table>
-  </body>
+</body>
 </html>
